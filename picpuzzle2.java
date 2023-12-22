@@ -1,6 +1,13 @@
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+
+
 class picpuzzle2 extends JFrame implements ActionListener{
 JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,sample,starB;
 Icon star;
@@ -48,7 +55,15 @@ picpuzzle2(){
 super("PICTURE PUZZLE BY TAHA");
 
 
-getContentPane().setBackground(Color.gray);
+
+
+JLabel background = new JLabel(new ImageIcon("/Users/tahaaheras/Desktop/INTERSTELLAR WALLPAPER 8.jpeg"));
+        background.setLayout(null);
+
+        // Set the content pane to the JLabel
+        setContentPane(background);
+
+
 
 
 
