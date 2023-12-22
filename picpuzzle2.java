@@ -53,7 +53,6 @@ getContentPane().setBackground(Color.gray);
 
 
 
-
 b1=new JButton(ic1);
 b1.setBounds(260,80,100,100);
 b2=new JButton(ic2);
@@ -74,6 +73,18 @@ b9=new JButton(ic9);
 b9.setBounds(460,280,100,100);
 sample=new JButton(samicon1);
 sample.setBounds(720,90,285,285);
+sample.setBorder(BorderFactory.createLineBorder(Color.white, 5));
+b1.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b2.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b3.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b4.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b5.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b6.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b7.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b8.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+b9.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+
+
 
 
 
@@ -104,6 +115,8 @@ setSize(600,500);
 setVisible(true);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
+
+
 
 public void actionPerformed(ActionEvent e){
 if(e.getSource()==b1){
