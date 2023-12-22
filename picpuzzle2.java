@@ -47,9 +47,7 @@ Icon ic27=new ImageIcon("pic/28.jpg");
 Icon ic28=new ImageIcon("pic/22.jpg");
 Icon ic29=new ImageIcon("pic/26.jpg");
 
-/**
- * 
- */
+
 picpuzzle2(){
 
 super("PICTURE PUZZLE BY TAHA");
@@ -60,13 +58,13 @@ super("PICTURE PUZZLE BY TAHA");
 JLabel background = new JLabel(new ImageIcon("pic/project_bg.jpeg"));
         background.setLayout(null);
 
-        // Set the content pane to the JLabel
+        // created background image function here 
         setContentPane(background);
 
 
 
 
-
+// here we set the size of the buttons
 
 b1=new JButton(ic1);
 b1.setBounds(260,180,100,100);
@@ -89,6 +87,7 @@ b9.setBounds(460,380,100,100);
 sample=new JButton(samicon1);
 sample.setBounds(720,190,285,285);
 
+// Here we specified the borders to the buttons
 sample.setBorder(BorderFactory.createLineBorder(Color.white, 5));
 b1.setBorder(BorderFactory.createLineBorder(Color.green, 1));
 b2.setBorder(BorderFactory.createLineBorder(Color.green, 1));
@@ -102,7 +101,7 @@ b9.setBorder(BorderFactory.createLineBorder(Color.green, 1));
 
 
 
-
+// Here we labelled.
 
 JLabel l1=new JLabel("SAMPLE --> ");
 l1.setForeground(Color.white);
@@ -118,7 +117,7 @@ l3.setForeground(Color.red);
 
 
 
-
+// Here we defined star image size and its border
 starB=new JButton(ic0);
 starB.setBounds(550,45,100,100);
 starB.setBorder(BorderFactory.createLineBorder(Color.green, 1));
@@ -134,7 +133,7 @@ setVisible(true);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
 
-
+// Here we made the class for action performed
 
 public void actionPerformed(ActionEvent e){
 if(e.getSource()==b1){
@@ -314,10 +313,10 @@ starB.setIcon(ic20);
 public static void main(String args[]){
   picpuzzle2 puzzle = new picpuzzle2();
 
-  // Make the frame full-screen
+  // Here we Made the frame full-screen
   puzzle.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-  // Make the frame visible
+  // Here we Made the frame visible
   puzzle.setVisible(true);
 }//end of main
 }//end of class
