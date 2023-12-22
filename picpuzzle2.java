@@ -57,7 +57,7 @@ super("PICTURE PUZZLE BY TAHA");
 
 
 
-JLabel background = new JLabel(new ImageIcon("/Users/tahaaheras/Desktop/INTERSTELLAR WALLPAPER 8.jpeg"));
+JLabel background = new JLabel(new ImageIcon("pic/project_bg.jpeg"));
         background.setLayout(null);
 
         // Set the content pane to the JLabel
