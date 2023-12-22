@@ -51,6 +51,7 @@ super("PICTURE PUZZLE BY TAHA");
 getContentPane().setBackground(Color.gray);
 
 
+
 b1=new JButton(ic1);
 b1.setBounds(10,80,100,100);
 b2=new JButton(ic2);
@@ -70,7 +71,7 @@ b8.setBounds(110,280,100,100);
 b9=new JButton(ic9);
 b9.setBounds(210,280,100,100);
 sample=new JButton(samicon1);
-sample.setBounds(480,100,285,285);
+sample.setBounds(480,90,285,285);
 
 
 
@@ -78,21 +79,19 @@ JLabel l1=new JLabel("SAMPLE :");
 l1.setForeground(Color.white);
 l1.setBounds(380,250,70,20);
 JLabel l2=new JLabel("*** This icon can be swapped with neighbour icon =>", SwingConstants.CENTER);
-l2.setBounds(5,15,500,20);
+l2.setBounds(2,15,500,50);
 l2.setForeground(Color.yellow);
 JLabel l3=new JLabel("TO GET NEXT PUZZEL CLICK SAMPLE PICTURE ");
-l3.setBounds(280,420,250,30);
+l3.setBounds(480, 420, 400, 30);
 l3.setForeground(Color.red);
-JLabel l4 = new JLabel("*******************************************************************************");
-l4.setBounds(5,3,50,30);
-l4.setForeground(Color.white);
+
 
 
 
 
 
 starB=new JButton(ic0);
-starB.setBounds(440,5,50,50);
+starB.setBounds(420,5,50,50);
 star=b9.getIcon();
 
 add(b1);add(b2);add(b3);add(b4);add(b5);add(b6);add(b7);add(b8);add(b9);add(sample);add(l1);add(l2);add(starB);add(l3);
@@ -278,6 +277,12 @@ starB.setIcon(ic20);
 }//end of actionPerformed
 
 public static void main(String args[]){
-new picpuzzle2();
+  picpuzzle2 puzzle = new picpuzzle2();
+
+  // Make the frame full-screen
+  puzzle.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
+  // Make the frame visible
+  puzzle.setVisible(true);
 }//end of main
 }//end of class
