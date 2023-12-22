@@ -40,9 +40,15 @@ Icon ic27=new ImageIcon("pic/28.jpg");
 Icon ic28=new ImageIcon("pic/22.jpg");
 Icon ic29=new ImageIcon("pic/26.jpg");
 
+/**
+ * 
+ */
 picpuzzle2(){
 
 super("PICTURE PUZZLE BY TAHA");
+
+
+getContentPane().setBackground(Color.gray);
 
 
 b1=new JButton(ic1);
@@ -69,19 +75,24 @@ sample.setBounds(480,100,285,285);
 
 
 JLabel l1=new JLabel("SAMPLE :");
-l1.setForeground(Color.black);
+l1.setForeground(Color.white);
 l1.setBounds(380,250,70,20);
-JLabel l2=new JLabel("This icon can be swapped with neighbour icon =>");
+JLabel l2=new JLabel("*** This icon can be swapped with neighbour icon =>", SwingConstants.CENTER);
 l2.setBounds(5,15,500,20);
-l2.setForeground(Color.blue);
+l2.setForeground(Color.yellow);
 JLabel l3=new JLabel("TO GET NEXT PUZZEL CLICK SAMPLE PICTURE ");
 l3.setBounds(280,420,250,30);
 l3.setForeground(Color.red);
+JLabel l4 = new JLabel("*******************************************************************************");
+l4.setBounds(5,3,50,30);
+l4.setForeground(Color.white);
+
+
 
 
 
 starB=new JButton(ic0);
-starB.setBounds(330,5,50,50);
+starB.setBounds(440,5,50,50);
 star=b9.getIcon();
 
 add(b1);add(b2);add(b3);add(b4);add(b5);add(b6);add(b7);add(b8);add(b9);add(sample);add(l1);add(l2);add(starB);add(l3);
