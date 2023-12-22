@@ -69,25 +69,26 @@ JLabel background = new JLabel(new ImageIcon("pic/project_bg.jpeg"));
 
 
 b1=new JButton(ic1);
-b1.setBounds(260,80,100,100);
+b1.setBounds(260,180,100,100);
 b2=new JButton(ic2);
-b2.setBounds(360,80,100,100);
+b2.setBounds(360,180,100,100);
 b3=new JButton(ic3);
-b3.setBounds(460,80,100,100);
+b3.setBounds(460,180,100,100);
 b4=new JButton(ic4);
-b4.setBounds(260,180,100,100);
+b4.setBounds(260,280,100,100);
 b5=new JButton(ic5);
-b5.setBounds(360,180,100,100);
+b5.setBounds(360,280,100,100);
 b6=new JButton(ic6);
-b6.setBounds(460,180,100,100);
+b6.setBounds(460,280,100,100);
 b7=new JButton(ic7);
-b7.setBounds(260,280,100,100);
+b7.setBounds(260,380,100,100);
 b8=new JButton(ic8);
-b8.setBounds(360,280,100,100);
+b8.setBounds(360,380,100,100);
 b9=new JButton(ic9);
-b9.setBounds(460,280,100,100);
+b9.setBounds(460,380,100,100);
 sample=new JButton(samicon1);
-sample.setBounds(720,90,285,285);
+sample.setBounds(720,190,285,285);
+
 sample.setBorder(BorderFactory.createLineBorder(Color.white, 5));
 b1.setBorder(BorderFactory.createLineBorder(Color.green, 1));
 b2.setBorder(BorderFactory.createLineBorder(Color.green, 1));
@@ -105,12 +106,12 @@ b9.setBorder(BorderFactory.createLineBorder(Color.green, 1));
 
 JLabel l1=new JLabel("SAMPLE --> ");
 l1.setForeground(Color.white);
-l1.setBounds(595,250,90,20);
+l1.setBounds(595,295,90,20);
 JLabel l2=new JLabel("*** This icon can be swapped with neighbour icon =>", SwingConstants.CENTER);
-l2.setBounds(132,15,500,50);
+l2.setBounds(120,55,500,50);
 l2.setForeground(Color.yellow);
 JLabel l3=new JLabel("TO GET NEXT PUZZEL CLICK SAMPLE PICTURE ");
-l3.setBounds(480, 420, 400, 30);
+l3.setBounds(480, 520, 400, 30);
 l3.setForeground(Color.red);
 
 
@@ -119,7 +120,9 @@ l3.setForeground(Color.red);
 
 
 starB=new JButton(ic0);
-starB.setBounds(550,5,50,50);
+starB.setBounds(550,45,100,100);
+starB.setBorder(BorderFactory.createLineBorder(Color.green, 1));
+
 star=b9.getIcon();
 
 add(b1);add(b2);add(b3);add(b4);add(b5);add(b6);add(b7);add(b8);add(b9);add(sample);add(l1);add(l2);add(starB);add(l3);
